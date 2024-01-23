@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  CAS_API_KEY: ${{ secrets.CAS_API_KEY }}
+  # CAS_API_KEY: ${{ secrets.CAS_API_KEY }}
 
 jobs:
   build:
@@ -24,5 +24,5 @@ jobs:
         with:
           args: |
             --all \
-            --target ha-auto-guest-login \
+            --target ha-auto-guest-login-kiosk \
             --docker-hub ${{ secrets.DOCKER_USERNAME }}

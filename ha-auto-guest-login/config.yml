@@ -3,7 +3,7 @@ description: "A web server that provides an easy way for guests to get access to
 version: "1.4.1"
 slug: "ha-auto-guest-login"
 init: false
-image: "norick/image-{arch}-ha-auto-guest-login-addon"
+image: "mrosner/image-{arch}-ha-auto-guest-login-addon"
 codenotary: rosnermd@gmail.com
 url: https://github.com/rosnermd/ha-auto-guest-login
 arch:

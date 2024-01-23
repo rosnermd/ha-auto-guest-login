@@ -19,4 +19,4 @@ jobs:
             --test \
             --all \
             --target ha-auto-guest-login \
-            --docker-hub norick/ha-guest-login-addon
+            --docker-hub mrosner/ha-guest-login-addon

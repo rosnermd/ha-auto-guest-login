@@ -1,4 +1,4 @@
-# ha-auto-guest-login
+# ha-auto-guest-login-kiosk
 
 This is a Fork of https://nathanorick.com/ha-automatic-guest-login, to allow for kiosk mode after redirect
 
