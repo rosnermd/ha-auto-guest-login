@@ -1,9 +1,10 @@
 import fetch from "node-fetch"
 
 export class AuthClient {
-  constructor(username, password) {
+  constructor(username, password,kioskMode) {
     this.username = username;
     this.password = password;
+    this.kioskMode = kioskMode;
   }
 
   async getRedirectUri(internalUrl, redirectBaseUrl, dashboard) {
@@ -14,6 +15,7 @@ export class AuthClient {
     console.log(`code: ${code}`);
 
     const uri = this.#createRedirectUri(redirectBaseUrl, code, clientId, dashboard);
+    console.log(`redirectURL: ${uri}`);
     return uri;
   }
 
@@ -91,10 +93,14 @@ export class AuthClient {
 
   #createRedirectUri(haUrl, code, clientId, dashboard) {
     let uri = `${haUrl}/${dashboard}?auth_callback=1`;
+
     uri.includes("?") ? uri.endsWith("&") || (uri += "&") : (uri += "?");
     uri += `code=${encodeURIComponent(code)}`;
     uri += `&state=${encodeURIComponent(this.#getState(haUrl, clientId))}`;
     uri += "&storeToken=true";
+    if(this.kioskMode){
+      uri += "&kiosk"
+    }
     return uri;
   }
 }
