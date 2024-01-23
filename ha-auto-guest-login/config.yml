@@ -1,11 +1,11 @@
-name: "Auto Guest Login"
+name: "Auto Guest Login - Kiosk"
 description: "A web server that provides an easy way for guests to get access to Home Assistant"
-version: "1.4.0"
+version: "1.4.1"
 slug: "ha-auto-guest-login"
 init: false
 image: "norick/image-{arch}-ha-auto-guest-login-addon"
-codenotary: cnathanorick@gmail.com
-url: https://github.com/cnorick/ha-auto-guest-login
+codenotary: rosnermd@gmail.com
+url: https://github.com/rosnermd/ha-auto-guest-login
 arch:
   - aarch64
   - amd64
