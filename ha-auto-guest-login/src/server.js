@@ -17,7 +17,7 @@ const supervisorToken = process.env.SUPERVISOR_TOKEN;
 const haClient = new HaClient(supervisorToken);
 const haPort = await haClient.getHaPort();
 const addonPort = await haClient.getAddOnPort();
-const kioskMode = conf.kioskMode;
+const kioskMode = config.kioskMode;
 
 const authClient = new AuthClient(guestUserName, guestPassword,kioskMode);
 const utils = new Utils(addonPort);
