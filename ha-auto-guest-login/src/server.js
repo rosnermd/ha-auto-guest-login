@@ -19,7 +19,7 @@ const haPort = await haClient.getHaPort();
 const addonPort = await haClient.getAddOnPort();
 const kioskMode = conf.kioskMode;
 
-const authClient = new AuthClient(guestUserName, guestPassword);
+const authClient = new AuthClient(guestUserName, guestPassword,kioskMode);
 const utils = new Utils(addonPort);
 const app = express();
 app.set('view engine', 'ejs');
