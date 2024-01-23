@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
 
-env:
+#env:
   # CAS_API_KEY: ${{ secrets.CAS_API_KEY }}
 
 jobs:

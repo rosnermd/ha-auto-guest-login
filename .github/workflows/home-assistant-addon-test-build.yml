@@ -2,8 +2,8 @@ name: "Home Assistant Addon Test Build"
 
 on: [pull_request]
 
-env:
-  CAS_API_KEY: ${{ secrets.CAS_API_KEY }}
+#env:
+#  CAS_API_KEY: ${{ secrets.CAS_API_KEY }}
 
 jobs:
   build:
