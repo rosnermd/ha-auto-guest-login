@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.4.2
-### Added
+### Fixed
 - Updated md files
 
 ## 1.4.1
