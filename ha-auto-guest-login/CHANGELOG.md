@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.2
+### Added
+- Updated md files
+
+## 1.4.1
+### Added
+- initial fork
+
+
 ## 1.4.0
 ### Added
 - Add advanced configuration parameters
